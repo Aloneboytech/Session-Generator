@@ -57,19 +57,19 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: 'SIGMA-MD;;;' + b64data });
 
                let SIGMA_MD_TEXT = `
-*_Pair Code By Maher Zubair_*
-*_Made With 🤍_*
+*_Pair Code By alone boy tech_*
+*_Made With 🌹_*
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
+ await Pair_Code_By_alone_boy_tech.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Maher_Zubair.ws.close();
+        await Pair_Code_By_alone_boy_tech.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    SIGMA_MD_PAIR_CODE();
+                    ALONE_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -80,6 +80,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await SIGMA_MD_PAIR_CODE()
+    return await ALONE_MD_PAIR_CODE()
 });
 module.exports = router
